@@ -1,0 +1,41 @@
+.admin-dashboard-page {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.admin-page-header {
+  margin-bottom: var(--space-6);
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.stat-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-6);
+}
+
+.stat-label {
+  font-size: var(--font-size-meta);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

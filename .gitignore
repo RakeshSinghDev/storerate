@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+
+# Local Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Local Database Data Directory
+pgdata/
+
+# Build and Output Artifacts
+dist/
+build/
+
+# Logs & Temporary Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System and OS Files
+.DS_Store
+Thumbs.db

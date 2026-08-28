@@ -1,0 +1,65 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--font-size-title);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-section);
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+.container {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Utilities */
+.text-meta {
+  font-size: var(--font-size-meta);
+  color: var(--color-text-secondary);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.text-success {
+  color: var(--color-success);
+}

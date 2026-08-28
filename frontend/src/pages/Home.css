@@ -1,0 +1,167 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(-1 * var(--space-8));
+  margin-bottom: calc(-1 * var(--space-8));
+}
+
+/* Full-width Hero with Subtle Dark Overlay & Centered Typography (UNTOUCHED) */
+.hero-fullwidth {
+  position: relative;
+  width: 100%;
+  height: 68vh;
+  min-height: 420px;
+  max-height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 23, 23, 0.55);
+  z-index: 2;
+}
+
+.hero-center-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 680px;
+  padding: 0 var(--space-4);
+}
+
+.hero-eyebrow-light {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: var(--font-weight-semibold);
+  color: #D2E0FB;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+}
+
+.hero-title-light {
+  font-size: 44px;
+  font-weight: var(--font-weight-bold);
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: var(--space-4);
+}
+
+.hero-description-light {
+  font-size: 18px;
+  color: #E4E4E1;
+  line-height: 1.4;
+  margin-bottom: var(--space-6);
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* How It Works Section - Added comfortable whitespace above heading */
+.how-it-works-section {
+  width: 100%;
+  background-color: var(--color-surface);
+  margin-top: var(--space-8);
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
+}
+
+.section-header {
+  margin-bottom: var(--space-6);
+}
+
+.section-header.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.section-subtitle {
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  align-items: stretch;
+  width: 100%;
+}
+
+.step-column {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-6);
+  height: 100%;
+}
+
+.step-number {
+  display: inline-block;
+  font-size: var(--font-size-meta);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.step-description {
+  font-size: var(--font-size-meta);
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-fullwidth {
+    height: 55vh;
+    min-height: 360px;
+  }
+  .hero-title-light {
+    font-size: 32px;
+  }
+  .hero-description-light {
+    font-size: 16px;
+  }
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}

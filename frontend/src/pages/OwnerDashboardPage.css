@@ -1,0 +1,135 @@
+.owner-dashboard-page {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.owner-page-header {
+  margin-bottom: var(--space-6);
+}
+
+.owner-summary-card {
+  padding: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.summary-header {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.owner-store-title {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.owner-store-address {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
+.owner-rating-hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero-rating-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.hero-rating-label {
+  font-size: var(--font-size-meta);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+}
+
+.hero-rating-values {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+}
+
+.hero-big-number {
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.hero-stars-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-count-label {
+  font-size: var(--font-size-meta);
+  color: var(--color-text-secondary);
+}
+
+.unrated-store-box {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  padding: var(--space-2) 0;
+}
+
+.owner-ratings-section {
+  margin-top: var(--space-6);
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+
+}
+
+.ratings-table-summary {
+  margin-bottom: var(--space-3);
+}
+
+.customer-name {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.empty-ratings-box,
+.no-store-card {
+  text-align: center;
+  padding: var(--space-12) var(--space-4);
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--border-radius-md);
+}
+
+.empty-ratings-title,
+.no-store-title {
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.empty-ratings-text,
+.no-store-text {
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .hero-rating-values {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}

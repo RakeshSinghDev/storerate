@@ -1,0 +1,29 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-4);
+}
+
+.form-label {
+  font-size: var(--font-size-meta);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.required-star {
+  color: var(--color-danger);
+}
+
+.field-message {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.helper-message {
+  color: var(--color-text-secondary);
+}
+
+.error-message {
+  color: var(--color-danger);
+}

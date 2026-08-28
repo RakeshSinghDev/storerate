@@ -1,0 +1,18 @@
+.auth-page-container {
+  max-width: var(--max-width-form);
+  margin: 0 auto;
+  padding: var(--space-4) 0;
+}
+
+.auth-submit-btn {
+  margin-top: var(--space-4);
+}
+
+.auth-footer-link {
+  text-align: center;
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-meta);
+  color: var(--color-text-secondary);
+}

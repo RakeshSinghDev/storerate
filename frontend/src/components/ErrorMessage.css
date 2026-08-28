@@ -1,0 +1,25 @@
+.error-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: #FDF2F2;
+  border: 1px solid #F8B4B4;
+  border-radius: var(--border-radius-sm);
+  color: var(--color-danger);
+  font-size: var(--font-size-body);
+  margin-bottom: var(--space-4);
+}
+
+.error-banner-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-danger);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}

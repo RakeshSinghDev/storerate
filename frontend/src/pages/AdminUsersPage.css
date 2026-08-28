@@ -1,0 +1,89 @@
+.admin-users-page {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.admin-filter-bar {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.filter-inputs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.admin-table-summary {
+  margin-bottom: var(--space-3);
+}
+
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortable-header:hover {
+  color: var(--color-text-primary);
+}
+
+.user-role-badge {
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  padding: 2px 6px;
+  border-radius: var(--border-radius-sm);
+}
+
+.role-NORMAL_USER {
+  background-color: #EBF3FB;
+  color: var(--color-primary);
+}
+
+.role-STORE_OWNER {
+  background-color: #FEF6E6;
+  color: #B47806;
+}
+
+.role-SYSTEM_ADMINISTRATOR {
+  background-color: #FDF2F2;
+  color: var(--color-danger);
+}
+
+.empty-state-container {
+  padding: var(--space-8);
+  text-align: center;
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--border-radius-md);
+}
+
+@media (max-width: 900px) {
+  .filter-inputs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .filter-inputs-grid {
+    grid-template-columns: 1fr;
+  }
+  .flex-between {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}
