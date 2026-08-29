@@ -20,7 +20,7 @@ export const Home = () => {
       <section className="hero-fullwidth">
         <img
           src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80"
-          alt="Local store front background"
+          alt="Authentic local retail storefront and neighborhood cafe"
           className="hero-bg-image"
         />
         <div className="hero-overlay" />

@@ -1,0 +1,12 @@
+# StoreRate Robots.txt
+User-agent: *
+Allow: /
+Allow: /stores
+Allow: /login
+Allow: /register
+
+# Disallow authenticated management dashboards from indexing
+Disallow: /admin/
+Disallow: /owner/
+
+Sitemap: https://storerate.vercel.app/sitemap.xml
